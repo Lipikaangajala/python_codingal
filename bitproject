@@ -1,0 +1,12 @@
+def bitno(number):
+    count=0
+    while number:
+        count+=1
+        if (number&1==1):
+            print(f"We found 1 at {count} position")
+            break
+        number>>=1    
+number=int(input("Enter a number : "))
+bitno(number)
+
+         
